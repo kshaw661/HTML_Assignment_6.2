@@ -1,13 +1,13 @@
-function max3num(num1, num2, num3) {
-    var max_so_far = num1;
-    if (num2 > max_so_far) {
-       max_so_far = num2;
+function largest_among_three(num1, num2, num3) {
+    var largest = num1;
+    if (num2 > largest) {
+       largest = num2;
     }
-    if (num3 > max_so_far) {
-       max_so_far = num3;
+    if (num3 > largest) {
+       largest = num3;
     }
-    return max_so_far;
+    return largest;
 }
 
-var xxx = max3num(5,1,888);
-console.log(xxx);
+var largest = largest_among_three(5,1,888);
+console.log('Largest between three numbers : '+largest);
